@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Componente;
+package Cliente;
+import Servidor.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
+import java.net.Socket;
 /**
  *
  * @author Estudiante
@@ -79,5 +82,11 @@ public class Carro extends JPanel implements ActionListener, KeyListener{
     
     public Rectangle obtenerRectangulo(){
       return new Rectangle(10+x, 30+y, 150, 120);    
+    }
+    
+    public void Server(int x, int y) throws IOException{
+       Socket server= new Socket("localhost", 8000);
+       
+        
     }
 }

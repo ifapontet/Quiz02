@@ -3,25 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package quizfinal;
+package Cliente;
 
-import Servidor.Tablero;
+import Servidor.*;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
 /**
  *
- * @author Usuario9
+ * @author Estudiante
  */
-public class Main {
-  
-    public static void main(String[] args) {
+public class MainCliente {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {               
         JFrame frame = new JFrame();
-        frame.setSize(new Dimension(250,250));
+        frame.setTitle("Servidor");
+        frame.setSize(new Dimension(500,500));
         frame.add(new Tablero());//adicionando el panel
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-        
     }
     
 }

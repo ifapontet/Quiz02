@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Componente;
+package Cliente;
 
-import Componente.Circulo;
-import Componente.Carro;
+import Servidor.*;
+import Servidor.Circulo;
+import Servidor.Carro;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
